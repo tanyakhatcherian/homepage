@@ -1,0 +1,85 @@
+body {
+    background-attachment: fixed;
+    background-image: radial-gradient(50% 50% at 50% 50%, #F4D7E7 0%, rgba(187, 190, 224, 0.7) 100%);
+    }
+    
+    .main-grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 1em;
+        grid-template-areas: "title title title"
+                             "sidebar sidebar sidebar"
+                             "star bye hello";
+    }
+    
+    /*.heading {
+      grid-area: title;
+      font-size: 60px;
+      margin-bottom: 10px;
+      margin-top: 5px;
+      margin-left: auto;
+      margin-right: auto;
+      font-family: 'Goudy Bookletter 1911', serif;
+    }*/
+
+    .heading {
+      grid-area: title;
+      justify-self: center;
+      align-self: center;
+      height: auto;
+      width: 40%;
+      margin: 3em;
+    }
+    
+    #nav-bar
+    {
+        display: flex;
+        grid-area: sidebar;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-family: 'Goudy Bookletter 1911', serif;
+        font-size: 16px;
+    }
+
+    #nav-bar a {
+      color: black;
+      text-decoration: none;
+    }
+    
+    
+    #left {
+      justify-self: right;
+      align-self: center;
+      height: auto;
+      width: 90%;
+      grid-area: star;
+    }
+
+    #text-left {
+      grid-area: star;
+      justify-self: right;
+      align-self: center;
+      height: auto;
+      width: 90%;
+      font-size: 40px;
+      text-align: center;
+    }
+    
+    #right {
+      justify-self: left;
+      align-self: center;
+      font-family: 'Goudy Bookletter 1911', serif;
+      text-align: center;
+      grid-area: hello;
+      font-size: 90px;
+    }
+    
+    #middle {
+      width: 70%;
+      margin-top: 2em;
+      height: auto;
+      justify-self: center;
+      align-self: center;
+      grid-area: bye;
+    }
