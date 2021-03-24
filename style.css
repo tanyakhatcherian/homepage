@@ -40,13 +40,26 @@ body {
         justify-content: space-evenly;
         font-family: 'Goudy Bookletter 1911', serif;
         font-size: 16px;
+        width: 80%;
+        margin: auto;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border: 1px;
+        border-color: #3d4051;
+        border-style: solid;
     }
 
     #nav-bar a {
-      color: black;
+      color: #3d4051;
       text-decoration: none;
     }
-    
+
+    span.navbtn {
+      font-size: 22px;
+      position: relative;
+      bottom: 1px;
+      color: #3d4051;
+    }
     
     #left {
       justify-self: right;
@@ -62,6 +75,7 @@ body {
       align-self: center;
       height: auto;
       width: 90%;
+      color: #5b5f7a;
       font-size: 40px;
       text-align: center;
     }
@@ -71,6 +85,7 @@ body {
       align-self: center;
       font-family: 'Goudy Bookletter 1911', serif;
       text-align: center;
+      color: #5b5f7a;
       grid-area: hello;
       font-size: 90px;
     }
