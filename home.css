@@ -3,14 +3,14 @@ body {
     background-image: radial-gradient(50% 50% at 50% 50%, #F4D7E7 0%, rgba(187, 190, 224, 0.7) 100%);
     }
     
-    .main-grid {
+    .home-grid {
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
         grid-template-rows: auto;
         grid-gap: 1em;
         grid-template-areas: "title title title"
                              "sidebar sidebar sidebar"
-                             "star bye hello";
+                             "star image new";
     }
     
     /*.heading {
@@ -24,12 +24,13 @@ body {
     }*/
 
     .heading {
-      grid-area: title;
-      justify-self: center;
-      align-self: center;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
       height: auto;
       width: 40%;
-      margin: 3em;
+      margin-bottom: 3em;
+      margin-top: 3em;
     }
     
     #nav-bar
@@ -86,7 +87,7 @@ body {
       font-family: 'Goudy Bookletter 1911', serif;
       text-align: center;
       color: #5b5f7a;
-      grid-area: hello;
+      grid-area: new;
       font-size: 90px;
     }
     
@@ -96,5 +97,7 @@ body {
       height: auto;
       justify-self: center;
       align-self: center;
-      grid-area: bye;
+      grid-area: image;
     }
+
+   
