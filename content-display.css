@@ -29,3 +29,10 @@ h1 {
     margin-left: 4em;
     margin-right: 4em;
 }
+
+.featured-display {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    text-align: center;
+}
