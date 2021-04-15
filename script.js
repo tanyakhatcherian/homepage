@@ -19,3 +19,15 @@ function loadpage(e){
 }
 
 $(document).on("click", "#nav-bar a", loadpage)
+
+function slideshow() {
+
+    $('#slideshow').slick({
+        prevArrow: null,
+        nextArrow: null,
+        autoplay: true,
+        fade: true,
+      });
+}
+
+$(document).on("click", "#nav-featured a", slideshow)

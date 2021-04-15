@@ -1,3 +1,5 @@
+/* this css will include the body background and the main home + index page grid + css styling*/
+
 body {
     background-attachment: fixed;
     background-image: radial-gradient(50% 50% at 50% 50%, #F4D7E7 0%, rgba(187, 190, 224, 0.7) 100%);
@@ -7,7 +9,7 @@ body {
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
         grid-template-rows: auto;
-        grid-gap: 1em;
+        grid-gap: .5em;
         grid-template-areas: "title title title"
                              "sidebar sidebar sidebar"
                              "star image new";
