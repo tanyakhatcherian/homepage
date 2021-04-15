@@ -1,3 +1,4 @@
+// function that loads the "home.html" page on start
 function start() {
     //$("body").css("background-color", "pink");
     $("#nav-bar a:first").click();
@@ -5,6 +6,8 @@ function start() {
 
 $(window).on("load", start);
 
+
+// function that loads each page of the navigation bar on click
 function loadpage(e){
 
     e.preventDefault();
