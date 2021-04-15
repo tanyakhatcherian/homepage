@@ -6,7 +6,6 @@ function start() {
 
 $(window).on("load", start);
 
-
 // function that loads each page of the navigation bar on click
 function loadpage(e){
 
@@ -15,10 +14,15 @@ function loadpage(e){
     $(this).addClass("active");
 
     let href = $(this).attr("href");
-    $("#content").load(href);
+    
+    if (href == "featured.html") {
+        $("#content").load(href, slideshow);
+    } else {
+        $("#content").load(href);   
+    }
 }
 
-$(document).on("click", "#nav-bar a", loadpage)
+$(document).on("click", "#nav-bar a", loadpage);
 
 function slideshow() {
 
@@ -29,5 +33,3 @@ function slideshow() {
         fade: true,
       });
 }
-
-$(document).on("click", "#nav-featured a", slideshow)
