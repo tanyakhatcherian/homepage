@@ -1,59 +1,71 @@
 <head>
-    <title>Sale</title>
-    <meta name ="author" content="Tanya Khatcherian">
-    <meta name = "description" content="sale of items">
-</head>
+  <title>Sale</title>
+  <!-- do i link the teas.css to index.html as well?-->
+  <meta name ="author" content="Tanya Khatcherian">
+  <meta name = "description" content="sale on teas">
+  <script src ="script.js"></script>
+  </head>
 
-    <div class="content-container">
-        <form class="sidebar">
-        <fieldset>
-          <legend>Filters</legend>
-          <label for="sort">SHOW: </label>
-          <select name="sort" id="sort">
-            <option value="price-high">Price, highest to lowest</option>
-            <option value="price-low">Price, lowest to highest</option>
-            <option value="newest">Newest releases</option>
-          </select>
-        </fieldset>
+  <div class="content-container">
+      <form class="sidebar">
+      <fieldset>
+        <legend>Filters</legend>
+        <label for="sort">SHOW: </label>
+        <select name="sort" id="sort">
+          <option value="price-high">Price, highest to lowest</option>
+          <option value="price-low">Price, lowest to highest</option>
+          <option value="newest">Newest releases</option>
+        </select>
+      </fieldset>
 
-        <fieldset>
-            <legend>Scent</legend>
-            <ul>
-              <li><input type="checkbox" name="b1"><span>Balancing</span></li>
-              <li><input type="checkbox" name="b2"><span>Toning</span></li>
-              <li><input type="checkbox" name="b3"><span>Exfoliating</span></li>
-            </ul>
-          </fieldset>
+      <fieldset>
+        <legend>Tea Type</legend>
+        <ul>
+          <li><input type="checkbox" id="black" value="black"><span>Black</span></li>
+          <li><input type="checkbox" id="green" value="green"><span>Green</span></li>
+          <li><input type="checkbox" id="herbal" value="herbal"><span>Herbal</span></li>
+          <li><input type="checkbox" id="white" value="white"><span>White</span></li>
+          <li><input type="checkbox" id="oolong" value="oolong"><span>Oolong</span></li>
+          <li><input type="checkbox" id="rooibos" value="rooibos"><span>Rooibos</span></li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <legend>Caffiene Level</legend>
+        <ul>
+          <li><input type="checkbox" id="caffiene-free" value="caffiene-free"><span>Caffiene Free</span></li>
+          <li><input type="checkbox" id="low" value="low"><span>Low</span></li>
+          <li><input type="checkbox" id="medium" value="medium"><span>Medium</span></li>
+          <li><input type="checkbox" id="high" value="high"><span>High</span></li>
+        </ul>
+      </fieldset>
+      </form>
+
+  <div class = "tea-inner-content products">
+      <div class="productItem" data-category="white" data-caffiene="high">
+        <img class="image-resize" src="photos-for-web/white-tea.png">
+          <p>hello</p>
+      </div>
+      <div class="productItem" data-category="green" data-caffiene="high">
+        <img class="image-resize" src="photos-for-web/jasmine-green.png">
+          <p>hello</p>
+      </div>
+      <div class="productItem" data-category="herbal" data-caffiene="caffiene-free">
+        <img class="image-resize" src="photos-for-web/herbal-tea.png">
+          <p>hello</p>
+      </div>
+      <div class="productItem" data-category="rooibos" data-caffiene="high">
+        <img class="image-resize" src="photos-for-web/rooibos.png">
+          <p>hello</p>
+      </div>
+      <div class="productItem" data-category="oolong" data-caffiene="low">
+        <img class="image-resize" src="photos-for-web/oolong.png">
+          <p>hello</p>
+      </div>
+      <div class="productItem" data-category="green" data-caffiene="low">
+        <img class="image-resize" src="photos-for-web/matcha.png">
+          <p>hello</p>
+      </div>
+  </div>
   
-          <fieldset>
-            <legend>Benefits</legend>
-            <ul>
-              <li><input type="checkbox" name="b1"><span>Balancing</span></li>
-              <li><input type="checkbox" name="b2"><span>Toning</span></li>
-              <li><input type="checkbox" name="b3"><span>Exfoliating</span></li>
-            </ul>
-          </fieldset>
-        </form>
-
-    <div class = "tea-inner-content">
-        <section class="row-one">
-            <p>goodbye</p>
-        </section>
-        <section class="row-one">
-            <p>hello</p>
-        </section>
-        <section class="row-one">
-            <p>hello</p>
-        </section>
-        <section class="row-one">
-            <p>hello</p>
-        </section>
-        <section class="row-one">
-            <p>hello</p>
-        </section>
-        <section class="row-one">
-            <p>hello</p>
-        </section>
-    </div>
-    
-    </div>
+  </div>

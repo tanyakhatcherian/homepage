@@ -3,6 +3,7 @@
     <!-- do i link the teas.css to index.html as well?-->
     <meta name ="author" content="Tanya Khatcherian">
     <meta name = "description" content="tea varieties">
+    <script src ="script.js"></script>
     </head>
 
     <div class="content-container">
@@ -18,43 +19,53 @@
         </fieldset>
 
         <fieldset>
-          <legend>Scent</legend>
+          <legend>Tea Type</legend>
           <ul>
-            <li><input type="checkbox" name="b1"><span>Balancing</span></li>
-            <li><input type="checkbox" name="b2"><span>Toning</span></li>
-            <li><input type="checkbox" name="b3"><span>Exfoliating</span></li>
+            <li><input type="checkbox" id="black" value="black"><span>Black</span></li>
+            <li><input type="checkbox" id="green" value="green"><span>Green</span></li>
+            <li><input type="checkbox" id="herbal" value="herbal"><span>Herbal</span></li>
+            <li><input type="checkbox" id="white" value="white"><span>White</span></li>
+            <li><input type="checkbox" id="oolong" value="oolong"><span>Oolong</span></li>
+            <li><input type="checkbox" id="rooibos" value="rooibos"><span>Rooibos</span></li>
           </ul>
         </fieldset>
 
         <fieldset>
-          <legend>Benefits</legend>
+          <legend>Caffiene Level</legend>
           <ul>
-            <li><input type="checkbox" name="b1"><span>Balancing</span></li>
-            <li><input type="checkbox" name="b2"><span>Toning</span></li>
-            <li><input type="checkbox" name="b3"><span>Exfoliating</span></li>
+            <li><input type="checkbox" id="caffiene-free" value="caffiene-free"><span>Caffiene Free</span></li>
+            <li><input type="checkbox" id="low" value="low"><span>Low</span></li>
+            <li><input type="checkbox" id="medium" value="medium"><span>Medium</span></li>
+            <li><input type="checkbox" id="high" value="high"><span>High</span></li>
           </ul>
         </fieldset>
         </form>
 
-    <div class = "tea-inner-content">
-        <section class="row-one">
+    <div class = "tea-inner-content products">
+        <div class="productItem" data-category="herbal" data-caffiene="caffiene-free">
+            <img class="image-resize" src="photos-for-web/mockup_a2.png">
+            <p>what's poppin</p>
+        </div>
+        <div class="productItem" data-category="herbal" data-caffiene="caffiene-free">
+          <img class="image-resize" src="photos-for-web/mockup-b.png">
             <p>hello</p>
-        </section>
-        <section class="row-one">
+        </div>
+        <div class="productItem" data-category="rooibos" data-caffiene="caffiene-free">
+          <img class="image-resize" src="photos-for-web/mockup-c.png">
             <p>hello</p>
-        </section>
-        <section class="row-one">
+        </div>
+        <div class="productItem" data-category="black" data-caffiene="high">
+          <img class="image-resize" src="photos-for-web/black-earl-grey-a.png">
             <p>hello</p>
-        </section>
-        <section class="row-one">
+        </div>
+        <div class="productItem" data-category="black" data-caffiene="high">
+          <img class="image-resize" src="photos-for-web/vanilla-black-tea.png">
             <p>hello</p>
-        </section>
-        <section class="row-one">
+        </div>
+        <div class="productItem" data-category="green" data-caffiene="low">
+          <img class="image-resize" src="photos-for-web/green.png">
             <p>hello</p>
-        </section>
-        <section class="row-one">
-            <p>hello</p>
-        </section>
+        </div>
     </div>
     
     </div>

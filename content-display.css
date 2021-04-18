@@ -39,7 +39,22 @@ h1 {
 
 #slideshow {
     height: 50%;
-    width: 90%;
+    width: auto;
     margin-left: auto;
     margin-right: auto;
+}
+
+.image-resize {
+width: 315px;
+height: 275px;
+opacity: 0.8;
+}
+
+.image-resize:hover {
+    opacity: 1.0;
+}
+
+.slick-slide img {
+    margin-left:auto;
+    margin-right:auto;
 }

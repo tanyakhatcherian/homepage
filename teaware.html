@@ -1,59 +1,64 @@
 <head>
-    <title>Teaware</title>
-    <meta name ="author" content="Tanya Khatcherian">
-    <meta name = "description" content="teaware varieties">
-    </head>
+  <title>Teaware</title>
+  <!-- do i link the teas.css to index.html as well?-->
+  <meta name ="author" content="Tanya Khatcherian">
+  <meta name = "description" content="teaware">
+  <script src ="script.js"></script>
+  </head>
 
-    <div class="content-container">
-        <form class="sidebar">
-        <fieldset>
-          <legend>Filters</legend>
-          <label for="sort">SHOW: </label>
-          <select name="sort" id="sort">
-            <option value="price-high">Price, highest to lowest</option>
-            <option value="price-low">Price, lowest to highest</option>
-            <option value="newest">Newest releases</option>
-          </select>
-        </fieldset>
+  <div class="content-container">
+      <form class="sidebar">
+      <fieldset>
+        <legend>Filters</legend>
+        <label for="sort">SHOW: </label>
+        <select name="sort" id="sort">
+          <option value="price-high">Price, highest to lowest</option>
+          <option value="price-low">Price, lowest to highest</option>
+          <option value="newest">Newest releases</option>
+        </select>
+      </fieldset>
 
-        <fieldset>
-          <legend>Scent</legend>
-          <ul>
-            <li><input type="checkbox" name="b1"><span>Balancing</span></li>
-            <li><input type="checkbox" name="b2"><span>Toning</span></li>
-            <li><input type="checkbox" name="b3"><span>Exfoliating</span></li>
-          </ul>
-        </fieldset>
+      <fieldset>
+        <legend>Shop</legend>
+        <ul>
+          <li><input type="checkbox" id="black" value="black"><span>Tumblers</span></li>
+          <li><input type="checkbox" id="green" value="green"><span>Teacups</span></li>
+          <li><input type="checkbox" id="herbal" value="herbal"><span>Steepers</span></li>
+          <li><input type="checkbox" id="white" value="white"><span>Infusers</span></li>
+          <li><input type="checkbox" id="oolong" value="oolong"><span>Pitchers</span></li>
+        </ul>
+      </fieldset>
 
-        <fieldset>
-          <legend>Benefits</legend>
-          <ul>
-            <li><input type="checkbox" name="b1"><span>Balancing</span></li>
-            <li><input type="checkbox" name="b2"><span>Toning</span></li>
-            <li><input type="checkbox" name="b3"><span>Exfoliating</span></li>
-          </ul>
-        </fieldset>
-        </form>
+      <fieldset>
+        <legend>Price</legend>
+        <ul>
+          <li><input type="checkbox" id="caffiene-free" value="caffiene-free"><span>Caffiene Free</span></li>
+          <li><input type="checkbox" id="low" value="low"><span>Under $25</span></li>
+          <li><input type="checkbox" id="medium" value="medium"><span>Under $30</span></li>
+          <li><input type="checkbox" id="high" value="high"><span>Under $50</span></li>
+        </ul>
+      </fieldset>
+      </form>
 
-    <div class = "tea-inner-content">
-        <section class="row-one">
-            <p>goodbye</p>
-        </section>
-        <section class="row-one">
-            <p>hello</p>
-        </section>
-        <section class="row-one">
-            <p>hello</p>
-        </section>
-        <section class="row-one">
-            <p>hello</p>
-        </section>
-        <section class="row-one">
-            <p>hello</p>
-        </section>
-        <section class="row-one">
-            <p>hello</p>
-        </section>
-    </div>
-    
-    </div>
+  <div class = "tea-inner-content products">
+      <div class="productItem" data-category="white" data-caffiene="high">
+          <p>hello</p>
+      </div>
+      <div class="productItem" data-category="green" data-caffiene="high">
+          <p>hello</p>
+      </div>
+      <div class="productItem" data-category="herbal" data-caffiene="caffiene-free">
+          <p>hello</p>
+      </div>
+      <div class="productItem" data-category="rooibos" data-caffiene="high">
+          <p>hello</p>
+      </div>
+      <div class="productItem" data-category="herbal" data-caffiene="low">
+          <p>hello</p>
+      </div>
+      <div class="productItem" data-category="green" data-caffiene="low">
+          <p>hello</p>
+      </div>
+  </div>
+  
+  </div>
