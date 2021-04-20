@@ -21,6 +21,14 @@
       -->
 
       <fieldset>
+        <legend>Product</legend>
+        <ul>
+          <li><input type="checkbox" name="type" value="teaware"><span>Teaware</span></li>
+          <li><input type="checkbox" name="type" value="teas"><span>Teas</span></li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
         <legend>Tea Type</legend>
         <ul>
           <li><input type="checkbox" name="category" value="black"><span>Black</span></li>
@@ -35,7 +43,7 @@
       <fieldset>
         <legend>Caffiene Level</legend>
         <ul>
-          <li><input type="checkbox" name="level" value="caffiene-free"><span>Caffiene Free</span></li>
+          <li><input type="checkbox" name="level" value="caffeine-free"><span>Caffeine Free</span></li>
           <li><input type="checkbox" name="level" value="low"><span>Low</span></li>
           <li><input type="checkbox" name="level" value="medium"><span>Medium</span></li>
           <li><input type="checkbox" name="level" value="high"><span>High</span></li>
@@ -44,35 +52,47 @@
       </form>
 
   <div class = "tea-inner-content products">
-      <div class="productItem" data-category="white" data-level="high">
+      <div class="productItem" data-category="white" data-level="medium" data-type="teas">
         <img class="image-resize" src="photos-for-web/white-tea.png">
         <h2>Organic White</h2>
           <p>hello</p>
+          <h3 class="crossed">20.00</h3><h3>$20.00 <span class="add material-icons">add_circle</span></h3>
       </div>
-      <div class="productItem" data-category="green" data-level="high">
+      <div class="productItem" data-category="green" data-level="low" data-type="teas">
         <img class="image-resize" src="photos-for-web/jasmine-green.png">
         <h2>Jasmine Green</h2>
           <p>hello</p>
+          <h3 class="crossed">20.00</h3><h3>$20.00 <span class="add material-icons">add_circle</span></h3>
       </div>
-      <div class="productItem" data-category="herbal" data-level="caffiene-free">
+      <div class="productItem" data-category="herbal" data-level="caffeine-free" data-type="teas">
         <img class="image-resize" src="photos-for-web/herbal-tea.png">
         <h2>Blueberry Field</h2>
           <p>hello</p>
+          <h3 class="crossed">20.00</h3><h3>$20.00 <span class="add material-icons">add_circle</span></h3>
       </div>
-      <div class="productItem" data-category="rooibos" data-level="high">
+      <div class="productItem" data-category="rooibos" data-level="high" data-type="teas">
         <img class="image-resize" src="photos-for-web/rooibos.png">
         <h2>Robust Rooibus</h2>
           <p>hello</p>
+          <h3 class="crossed">20.00</h3><h3>$20.00 <span class="add material-icons">add_circle</span></h3>
       </div>
-      <div class="productItem" data-category="oolong" data-level="low">
+      <div class="productItem" data-category="oolong" data-level="medium" data-type="teas">
         <img class="image-resize" src="photos-for-web/oolong.png">
         <h2>Chai Oolong</h2>
           <p>hello</p>
+          <h3 class="crossed">20.00</h3><h3>$20.00 <span class="add material-icons">add_circle</span></h3>
       </div>
-      <div class="productItem" data-category="green" data-level="low">
+      <div class="productItem" data-category="green" data-level="low" data-type="teas">
         <img class="image-resize" src="photos-for-web/matcha.png">
         <h2>Matcha Made in Heaven</h2>
           <p>hello</p>
+          <h3 class="crossed">20.00</h3><h3>$20.00 <span class="add material-icons">add_circle</span></h3>
+      </div>
+      <div class="productItem" data-category="teaware" data-price="medium" data-type="teaware">
+        <img class="image-resize" src="photos-for-web/mug-f.png">
+        <h2>Frosted Glass Mug</h2>
+          <p>asdft</a></p>
+          <h3 class="crossed">20.00</h3><h3>$20.00 <span class="add material-icons">add_circle</span></h3>
       </div>
   </div>
   
