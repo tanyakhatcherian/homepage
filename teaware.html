@@ -7,7 +7,8 @@
   </head>
 
   <div class="content-container">
-      <form class="sidebar">
+      <form class="sidebar" id="teaware_filters">
+        <!--
       <fieldset>
         <legend>Filters</legend>
         <label for="sort">SHOW: </label>
@@ -17,70 +18,81 @@
           <option value="newest">Newest releases</option>
         </select>
       </fieldset>
+        -->
 
       <fieldset>
         <legend>Shop</legend>
         <ul>
-          <li><input type="checkbox" id="mugs" value="mugs"><span>Mugs</span></li>
-          <li><input type="checkbox" id="teapot" value="teapot"><span>Teapots</span></li>
-          <li><input type="checkbox" id="steep" value="steep"><span>Steeping</span></li>
+          <li><input type="checkbox" name="category" value="mugs"><span>Mugs</span></li>
+          <li><input type="checkbox" name="category" value="teapot"><span>Teapots</span></li>
+          <li><input type="checkbox" name="category" value="steep"><span>Steeping</span></li>
         </ul>
       </fieldset>
 
+
       <fieldset>
+        <legend>Price</legend>
+        <ul>
+          <li><input type="checkbox" name="price" value="low"><span>Low</span></li>
+          <li><input type="checkbox" name="price" value="medium"><span>Medium</span></li>
+          <li><input type="checkbox" name="price" value="high"><span>High</span></li>
+        </ul>
+      </fieldset>
+      </form>
+<!--       <fieldset>
         <legend>Price</legend>
         <ul>
           <li><input type="checkbox" id="low" value="low"><span>Under $25</span></li>
           <li><input type="checkbox" id="medium" value="medium"><span>Under $30</span></li>
           <li><input type="checkbox" id="high" value="high"><span>Under $50</span></li>
         </ul>
-      </fieldset>
+      </fieldset> -->
       </form>
 
-  <div class = "tea-inner-content products">
-      <div class="productItem" data-category="mugs" data-caffiene="high">
+  <div class="tea-inner-content products">
+      <div class="productItem" data-category="mugs" data-price="high">
         <img class="image-resize" src="photos-for-web/mug-a.png">
-          <p>hello</p>
+          <p>data-category="mugs" data-price="high"</p>
       </div>
-      <div class="productItem" data-category="mugs" data-caffiene="high">
+      <div class="productItem" data-category="mugs" data-price="high">
         <img class="image-resize" src="photos-for-web/mug-b.png">
-          <p>hello</p>
+          <p>data-category="mugs" data-price="high"</p>
       </div>
-      <div class="productItem" data-category="mugs" data-caffiene="low">
+      <div class="productItem" data-category="mugs" data-price="low">
         <img class="image-resize" src="photos-for-web/mug-c.png">
-          <p>hello</p>
+          <p>data-category="mugs" data-price="low"</p>
       </div>
-      <div class="productItem" data-category="mugs" data-caffiene="high">
+      <div class="productItem" data-category="mugs" data-price="high">
         <img class="image-resize" src="photos-for-web/mug-d.png">
-          <p>hello</p>
+          <p>data-category="mugs" data-price="high"</p>
       </div>
-      <div class="productItem" data-category="mugs" data-caffiene="low">
+      <div class="productItem" data-category="mugs" data-price="low">
         <img class="image-resize" src="photos-for-web/mug-e.png">
-          <p>hello</p>
+          <p>data-category="mugs" data-price="low"</p>
       </div>
-      <div class="productItem" data-category="mugs" data-caffiene="low">
+      <div class="productItem" data-category="mugs" data-price="medium">
         <img class="image-resize" src="photos-for-web/mug-f.png">
-          <p>hello</p>
+          <p>data-category="mugs" data-price="medium"</p>
       </div>
-      <div class="productItem" data-category="teapot" data-caffiene="low">
+      <div class="productItem" data-category="teapot" data-price="medium">
         <img class="image-resize" src="photos-for-web/teapot-a.png">
-          <p>hello</p>
+          <p>data-category="teapot" data-price="medium"</p>
       </div>
-      <div class="productItem" data-category="teapot" data-caffiene="low">
+      <div class="productItem" data-category="teapot" data-price="low">
         <img class="image-resize" src="photos-for-web/teapot-b.png">
-          <p>hello</p>
+          <p>data-category="teapot" data-price="low"</p>
       </div>
-      <div class="productItem" data-category="steep" data-caffiene="low">
+      <div class="productItem" data-category="steep" data-price="low">
         <img class="image-resize" src="photos-for-web/teabag.png">
-          <p>hello</p>
+          <p>data-category="steep" data-price="low"</p>
       </div>
-      <div class="productItem" data-category="steep" data-caffiene="low">
+      <div class="productItem" data-category="steep" data-price="low">
         <img class="image-resize" src="photos-for-web/tea-spoons.png">
-          <p>hello</p>
+          <p>data-category="steep" data-price="low"</p>
       </div>
-      <div class="productItem" data-category="steep" data-caffiene="low">
+      <div class="productItem" data-category="steep" data-price="low">
         <img class="image-resize" src="photos-for-web/steeper.png">
-          <p>hello</p>
+          <p>data-category="steep" data-price="low"</p>
       </div>
   </div>
   

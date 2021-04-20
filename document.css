@@ -3,6 +3,8 @@
 body {
     background-attachment: fixed;
     background-image: radial-gradient(50% 50% at 50% 50%, #F4D7E7 0%, rgba(187, 190, 224, 0.7) 100%);
+    font-family: 'Goudy Bookletter 1911', serif;
+    color: #5b5f7a;
     }
     
     .home-grid {
@@ -41,7 +43,6 @@ body {
         grid-area: sidebar;
         flex-direction: row;
         justify-content: space-evenly;
-        font-family: 'Goudy Bookletter 1911', serif;
         font-size: 16px;
         width: 80%;
         margin: auto;
@@ -77,8 +78,8 @@ body {
       justify-self: right;
       align-self: center;
       height: auto;
+      font-family: 'Times New Roman', Times, serif;
       width: 90%;
-      color: #5b5f7a;
       font-size: 40px;
       text-align: center;
     }
@@ -86,9 +87,7 @@ body {
     #right {
       justify-self: left;
       align-self: center;
-      font-family: 'Goudy Bookletter 1911', serif;
       text-align: center;
-      color: #5b5f7a;
       grid-area: new;
       font-size: 90px;
     }

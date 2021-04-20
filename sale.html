@@ -7,7 +7,8 @@
   </head>
 
   <div class="content-container">
-      <form class="sidebar">
+      <form class="sidebar" id="teaware_filters">
+        <!--
       <fieldset>
         <legend>Filters</legend>
         <label for="sort">SHOW: </label>
@@ -17,53 +18,60 @@
           <option value="newest">Newest releases</option>
         </select>
       </fieldset>
+      -->
 
       <fieldset>
         <legend>Tea Type</legend>
         <ul>
-          <li><input type="checkbox" id="black" value="black"><span>Black</span></li>
-          <li><input type="checkbox" id="green" value="green"><span>Green</span></li>
-          <li><input type="checkbox" id="herbal" value="herbal"><span>Herbal</span></li>
-          <li><input type="checkbox" id="white" value="white"><span>White</span></li>
-          <li><input type="checkbox" id="oolong" value="oolong"><span>Oolong</span></li>
-          <li><input type="checkbox" id="rooibos" value="rooibos"><span>Rooibos</span></li>
+          <li><input type="checkbox" name="category" value="black"><span>Black</span></li>
+          <li><input type="checkbox" name="category" value="green"><span>Green</span></li>
+          <li><input type="checkbox" name="category" value="herbal"><span>Herbal</span></li>
+          <li><input type="checkbox" name="category" value="white"><span>White</span></li>
+          <li><input type="checkbox" name="category" value="oolong"><span>Oolong</span></li>
+          <li><input type="checkbox" name="category" value="rooibos"><span>Rooibos</span></li>
         </ul>
       </fieldset>
 
       <fieldset>
         <legend>Caffiene Level</legend>
         <ul>
-          <li><input type="checkbox" id="caffiene-free" value="caffiene-free"><span>Caffiene Free</span></li>
-          <li><input type="checkbox" id="low" value="low"><span>Low</span></li>
-          <li><input type="checkbox" id="medium" value="medium"><span>Medium</span></li>
-          <li><input type="checkbox" id="high" value="high"><span>High</span></li>
+          <li><input type="checkbox" name="level" value="caffiene-free"><span>Caffiene Free</span></li>
+          <li><input type="checkbox" name="level" value="low"><span>Low</span></li>
+          <li><input type="checkbox" name="level" value="medium"><span>Medium</span></li>
+          <li><input type="checkbox" name="level" value="high"><span>High</span></li>
         </ul>
       </fieldset>
       </form>
 
   <div class = "tea-inner-content products">
-      <div class="productItem" data-category="white" data-caffiene="high">
+      <div class="productItem" data-category="white" data-level="high">
         <img class="image-resize" src="photos-for-web/white-tea.png">
+        <h2>Organic White</h2>
           <p>hello</p>
       </div>
-      <div class="productItem" data-category="green" data-caffiene="high">
+      <div class="productItem" data-category="green" data-level="high">
         <img class="image-resize" src="photos-for-web/jasmine-green.png">
+        <h2>Jasmine Green</h2>
           <p>hello</p>
       </div>
-      <div class="productItem" data-category="herbal" data-caffiene="caffiene-free">
+      <div class="productItem" data-category="herbal" data-level="caffiene-free">
         <img class="image-resize" src="photos-for-web/herbal-tea.png">
+        <h2>Blueberry Field</h2>
           <p>hello</p>
       </div>
-      <div class="productItem" data-category="rooibos" data-caffiene="high">
+      <div class="productItem" data-category="rooibos" data-level="high">
         <img class="image-resize" src="photos-for-web/rooibos.png">
+        <h2>Robust Rooibus</h2>
           <p>hello</p>
       </div>
-      <div class="productItem" data-category="oolong" data-caffiene="low">
+      <div class="productItem" data-category="oolong" data-level="low">
         <img class="image-resize" src="photos-for-web/oolong.png">
+        <h2>Chai Oolong</h2>
           <p>hello</p>
       </div>
-      <div class="productItem" data-category="green" data-caffiene="low">
+      <div class="productItem" data-category="green" data-level="low">
         <img class="image-resize" src="photos-for-web/matcha.png">
+        <h2>Matcha Made in Heaven</h2>
           <p>hello</p>
       </div>
   </div>

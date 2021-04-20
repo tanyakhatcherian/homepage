@@ -7,7 +7,8 @@
     </head>
 
     <div class="content-container">
-        <form class="sidebar">
+        <form class="sidebar" id="teaware_filters">
+          <!--
         <fieldset>
           <legend>Filters</legend>
           <label for="sort">SHOW: </label>
@@ -17,53 +18,60 @@
             <option value="newest">Newest releases</option>
           </select>
         </fieldset>
+        -->
 
         <fieldset>
           <legend>Tea Type</legend>
           <ul>
-            <li><input type="checkbox" id="black" value="black"><span>Black</span></li>
-            <li><input type="checkbox" id="green" value="green"><span>Green</span></li>
-            <li><input type="checkbox" id="herbal" value="herbal"><span>Herbal</span></li>
-            <li><input type="checkbox" id="white" value="white"><span>White</span></li>
-            <li><input type="checkbox" id="oolong" value="oolong"><span>Oolong</span></li>
-            <li><input type="checkbox" id="rooibos" value="rooibos"><span>Rooibos</span></li>
+            <li><input type="checkbox" name="category" value="black"><span>Black</span></li>
+            <li><input type="checkbox" name="category" value="green"><span>Green</span></li>
+            <li><input type="checkbox" name="category" value="herbal"><span>Herbal</span></li>
+            <li><input type="checkbox" name="category" value="white"><span>White</span></li>
+            <li><input type="checkbox" name="category" value="oolong"><span>Oolong</span></li>
+            <li><input type="checkbox" name="category" value="rooibos"><span>Rooibos</span></li>
           </ul>
         </fieldset>
 
         <fieldset>
           <legend>Caffiene Level</legend>
           <ul>
-            <li><input type="checkbox" id="caffiene-free" value="level"><span>Caffiene Free</span></li>
-            <li><input type="checkbox" id="low" value="level"><span>Low</span></li>
-            <li><input type="checkbox" id="medium" value="level"><span>Medium</span></li>
-            <li><input type="checkbox" id="high" value="level"><span>High</span></li>
+            <li><input type="checkbox" name="level" value="caffiene-free"><span>Caffiene Free</span></li>
+            <li><input type="checkbox" name="level" value="low"><span>Low</span></li>
+            <li><input type="checkbox" name="level" value="medium"><span>Medium</span></li>
+            <li><input type="checkbox" name="level" value="high"><span>High</span></li>
           </ul>
         </fieldset>
         </form>
 
     <div class = "tea-inner-content products">
-        <div class="productItem" data-category="herbal" data-caffiene="caffiene-free">
+        <div class="productItem" data-category="herbal" data-level="caffiene-free">
             <img class="image-resize" src="photos-for-web/mockup_a2.png">
-            <p>what's poppin</p>
+            <h2>Chamomile + Lavender</h2>
+            <p>Chamomile</p>
         </div>
-        <div class="productItem" data-category="herbal" data-caffiene="caffiene-free">
+        <div class="productItem" data-category="herbal" data-level="caffiene-free">
           <img class="image-resize" src="photos-for-web/mockup-b.png">
+          <h2>Valerian + Peppermint</h2>
             <p>hello</p>
         </div>
-        <div class="productItem" data-category="rooibos" data-caffiene="caffiene-free">
+        <div class="productItem" data-category="rooibos" data-level="caffiene-free">
           <img class="image-resize" src="photos-for-web/mockup-c.png">
+          <h2>Rosehip + Passionflora</h2>
             <p>hello</p>
         </div>
-        <div class="productItem" data-category="black" data-caffiene="high">
+        <div class="productItem" data-category="black" data-level="high">
           <img class="image-resize" src="photos-for-web/black-earl-grey-a.png">
+          <h2>Earl Grey</h2>
             <p>hello</p>
         </div>
-        <div class="productItem" data-category="black" data-caffiene="high">
+        <div class="productItem" data-category="black" data-level="high">
           <img class="image-resize" src="photos-for-web/vanilla-black-tea.png">
+          <h2>Vanilla Dreams</h2>
             <p>hello</p>
         </div>
-        <div class="productItem" data-category="green" data-caffiene="low">
+        <div class="productItem" data-category="green" data-level="low">
           <img class="image-resize" src="photos-for-web/green.png">
+          <h2>Organic Green</h2>
             <p>hello</p>
         </div>
     </div>
