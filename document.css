@@ -105,4 +105,13 @@ body {
       grid-area: image;
     }
 
+  .footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  hr {
+    margin-top: 2em;
+  }
+
    

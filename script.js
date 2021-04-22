@@ -35,10 +35,6 @@ function slideshow() {
       });
 }
 
-
-// filtering for teas + sale
-// the product filter is working, but the caffiene filter is faulty for example if i click "green, low" it should show the item that is green tea with low caffiene, but it doesn't it shows both green teas, it only works with caffiene-free caffiene which i see is whats being called in the function but i don't know how to apply it to all filters of caffiene level. can you help me troubleshoot? i think whats happening is that as soon as the first condition is met it stops which is why caffiene free is showing first.. so how do i fix it? if i can fix the jquery it'll be fixed on the teas html as well. further, can i copy+paste this function again below and change the variable names to work with my teaware page? 
-
 $.ajaxSetup({
     cache: false
 });
